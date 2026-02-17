@@ -70,7 +70,7 @@ export function Navbar() {
           href="/contacto"
           className="hidden md:inline-flex glow-btn px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
         >
-          Agendar demo
+          Cotizar Servicio
         </Link>
 
         {/* Mobile menu button */}

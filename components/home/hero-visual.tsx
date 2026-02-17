@@ -38,7 +38,7 @@ export function HeroVisual() {
   return (
     <div
       ref={containerRef}
-      className="relative w-full max-w-lg mx-auto transition-transform duration-200 flex items-center justify-center"
+      className="relative w-full max-w-lg mx-auto transition-transform duration-200 flex items-center justify-center atom-container"
       style={{ transformStyle: "preserve-3d" }}
     >
       {/* Outer glow */}

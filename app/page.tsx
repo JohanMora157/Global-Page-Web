@@ -66,29 +66,29 @@ export default function HomePage() {
               </RevealOnScroll>
 
               <RevealOnScroll delay={1}>
-                <p className="mt-6 text-white/70 text-lg md:text-xl leading-relaxed max-w-2xl text-pretty">
-                  En Global Automate centralizamos herramientas, creamos
-                  experiencias web premium, desarrollamos software a medida y
-                  reforzamos tu ciberseguridad para escalar con confianza.
+                <p className="mt-6 text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0">
+                En Global Automate centralizamos herramientas, creamos experiencias web premium, desarrollamos software a medida y reforzamos tu ciberseguridad para escalar con confianza.
                 </p>
+
               </RevealOnScroll>
 
               <RevealOnScroll delay={2}>
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                  <Link
-                    href="/contacto"
-                    className="glow-btn px-8 py-3.5 rounded-lg font-semibold text-white text-center inline-flex items-center justify-center gap-2"
-                  >
-                    Agendar demo
-                    <ArrowRight size={18} />
-                  </Link>
-                  <Link
-                    href="/servicios"
-                    className="glow-btn-outline px-8 py-3.5 rounded-lg font-semibold text-white text-center inline-flex items-center justify-center gap-2"
-                  >
-                    Ver servicios
-                  </Link>
-                </div>
+              <Link
+                href="/contacto"
+                className="glow-btn px-9 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
+              >
+                Cotizar demo
+                <ArrowRight size={18} />
+              </Link>
+
+              <Link
+                href="/servicios"
+                className="glow-btn-outline px-9 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
+              >
+                Ver servicios
+              </Link>
+            </div>
               </RevealOnScroll>
             </div>
 
@@ -103,7 +103,7 @@ export default function HomePage() {
       </section>
 
       {/* Three cards section */}
-      <section className="relative py-20 px-6">
+      <section className="relative py-5 px-6">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Que hacemos */}
@@ -264,7 +264,7 @@ export default function HomePage() {
                 href="/contacto"
                 className="glow-btn px-8 py-3.5 rounded-lg font-semibold text-white inline-flex items-center gap-2"
               >
-                Agendar demo
+                Cotizar demo
                 <ArrowRight size={18} />
               </Link>
             </GlassCard>

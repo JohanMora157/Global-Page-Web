@@ -4,6 +4,7 @@ import "./globals.css"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { ParticlesBackground } from "@/components/particles-background"
+import { ChatbotButton } from "@/components/chatbot-button"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { PageTransition } from "@/components/page-transition"
 
@@ -50,6 +51,7 @@ export default function RootLayout({
         </PageTransition>
         <Footer />
         <WhatsAppButton />
+        <ChatbotButton />
       </body>
     </html>
   )

@@ -8,8 +8,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <OrbitLogo size={36} />
+            <Link href="/" className="flex items-center gap-10.5 mb-4">
+              <OrbitLogo size={65} />
               <span className="font-heading text-lg font-bold text-white">
                 Global <span className="gradient-text">Automate</span>
               </span>
