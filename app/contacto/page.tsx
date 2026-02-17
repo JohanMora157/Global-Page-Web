@@ -31,8 +31,10 @@ const contactMethods = [
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "Escribenos por WhatsApp",
-    href: "https://api.whatsapp.com/send/?phone=573181324136&text&type=phone_number&app_absent=0",
+    value: "Escríbenos por WhatsApp",
+    href: `https://wa.me/573181324136?text=${encodeURIComponent(
+      "HHola Global Automate!! Estoy interesado en sus servicios. ¿Podemos agendar una demo?"
+    )}`,
     external: true,
   },
 ]
@@ -164,7 +166,7 @@ export default function ContactoPage() {
       </section>
 
       {/* FAQ */}
-      <section className="relative py-24 px-6">
+      <section className="relative py-20 px-6">
         <div className="mx-auto max-w-3xl">
           <RevealOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white text-center mb-12 text-balance">

@@ -43,9 +43,10 @@ export function Navbar() {
             height={44}
             className="transition-transform duration-300 group-hover:scale-110"
           />
-          <span className="font-heading text-xl font-bold text-white">
-            Global <span className="gradient-text">Automate</span>
-          </span>
+          <span className="font-heading text-xl font-bold text-white transition-all duration-300 group-hover: group-hover:drop-shadow-[0_0_12px_rgba(0,245,255,0.8)]">
+  Global <span className="gradient-text">Automate</span>
+</span>
+
         </Link>
 
         {/* Desktop nav */}

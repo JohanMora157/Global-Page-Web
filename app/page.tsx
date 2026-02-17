@@ -78,7 +78,7 @@ export default function HomePage() {
                 href="/contacto"
                 className="glow-btn px-9 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
               >
-                Cotizar demo
+                Cotizar Servicio
                 <ArrowRight size={18} />
               </Link>
 
@@ -264,7 +264,7 @@ export default function HomePage() {
                 href="/contacto"
                 className="glow-btn px-8 py-3.5 rounded-lg font-semibold text-white inline-flex items-center gap-2"
               >
-                Cotizar demo
+                Cotizar Servicio
                 <ArrowRight size={18} />
               </Link>
             </GlassCard>

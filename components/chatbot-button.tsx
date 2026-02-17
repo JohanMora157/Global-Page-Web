@@ -72,14 +72,31 @@ export function ChatbotButton() {
   return (
     <>
       {/* Botón flotante */}
-      <button
-        type="button"
-        aria-label={open ? "Cerrar chatbot" : "Abrir chatbot"}
-        onClick={() => setOpen((v) => !v)}
-        className="fixed bottom-24 right-6 z-[9999] h-14 w-14 rounded-full glow-chatbot flex items-center justify-center shadow-lg"
-      >
-        {open ? <X className="h-6 w-6" /> : <Bot className="h-6 w-6" />}
-      </button>
+      <div className="fixed bottom-24 right-6 z-[9999] group">
+        <button
+          type="button"
+          aria-label={open ? "Cerrar chatbot" : "Abrir chatbot"}
+          onClick={() => setOpen((v) => !v)}
+          className="h-14 w-14 rounded-full glow-chatbot flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+        >
+          {open ? <X className="h-6 w-6" /> : <Bot className="h-6 w-6" />}
+        </button>
+
+        {/* Tooltip */}
+        <div
+          className="
+            pointer-events-none absolute right-16 top-1/2 -translate-y-1/2
+            opacity-0 translate-x-2
+            group-hover:opacity-100 group-hover:translate-x-0
+            transition-all duration-200 ease-out
+          "
+        >
+          <div className="rounded-lg bg-black/80 px-3 py-1.5 text-xs text-white whitespace-nowrap shadow-lg">
+            Prueba nuestro asistente virtual
+          </div>
+        </div>
+      </div>
+
 
       {/* Ventana del chat */}
       {open && (

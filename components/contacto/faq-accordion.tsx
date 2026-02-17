@@ -9,6 +9,21 @@ import {
 
 const faqs = [
   {
+    question: "Desarrollan software a medida para mi negocio?",
+    answer:
+      "Sí. Creamos software adaptado a tus procesos reales, evitando soluciones genéricas que no se ajustan a la forma en que trabajas.",
+  },
+  {
+    question: "Pueden integrar el software con mis sistemas actuales?",
+    answer:
+      "Sí. Nos especializamos en integrar herramientas existentes para que todo funcione de forma conectada y eficiente. ",
+  },
+  {
+    question: "Mi página web puede conectarse con automatizaciones?",
+    answer:
+      "Totalmente. De hecho, es uno de nuestros mayores diferenciales: conectamos tu web con flujos automáticos, chatbots y sistemas internos.",
+  },
+  {
     question: "Cuanto tiempo toma implementar una automatizacion?",
     answer:
       "Depende de la complejidad del flujo. Automatizaciones simples (como respuestas en WhatsApp o sincronizacion de datos) pueden estar listas en 3-5 dias habiles. Proyectos mas complejos con multiples integraciones suelen tomar entre 2 y 4 semanas.",
@@ -27,11 +42,6 @@ const faqs = [
     question: "Que tan seguras son las soluciones que desarrollan?",
     answer:
       "La seguridad es un pilar fundamental en todo lo que hacemos. Aplicamos buenas practicas OWASP, realizamos auditorias de seguridad, configuramos headers HTTP seguros, y protegemos contra vulnerabilidades comunes como XSS, CSRF e inyeccion SQL.",
-  },
-  {
-    question: "Pueden integrar automatizaciones con WhatsApp Business?",
-    answer:
-      "Si. Somos especialistas en integraciones con WhatsApp Business API. Podemos crear flujos automaticos de respuesta, notificaciones a clientes, bots conversacionales y sincronizacion con tu CRM o base de datos.",
   },
   {
     question: "Trabajan con empresas fuera de Colombia?",
