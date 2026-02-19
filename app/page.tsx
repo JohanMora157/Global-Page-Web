@@ -39,7 +39,7 @@ const partners = [
 
 export default function HomePage() {
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden">
       {/* Ambient lights */}
       <div
         className="light-blob w-96 h-96 bg-[#00F5FF] top-20 -left-48"

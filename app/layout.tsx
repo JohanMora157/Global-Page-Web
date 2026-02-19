@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning className="overflow-x-hidden">
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased bg-main-gradient noise-overlay min-h-screen overflow-x-hidden`}
       >
