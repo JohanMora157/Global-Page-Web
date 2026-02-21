@@ -221,7 +221,7 @@ export default function ServiciosPage() {
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-6 text-white/70 lg:text-[18.5px] md:text-xl leading-relaxed max-w-2xl mx-auto text-pretty">
+            <p className="mt-6 text-white/70 text-[14px] lg:text-[18px] md:text-xl leading-relaxed max-w-2xl mx-auto text-pretty">
               Disenamos, desarrollamos e integramos soluciones digitales que
               convierten procesos lentos en resultados medibles.
             </p>
@@ -254,14 +254,14 @@ export default function ServiciosPage() {
                     <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">
                       {service.title}
                     </h3>
-                    <p className="text-white/60 leading-relaxed">
+                    <p className="text-white/60 text-[12px] lg:text-[15px] leading-relaxed">
                       {service.description}
                     </p>
                     <ul className="flex flex-col gap-2.5">
                       {service.bullets.map((bullet) => (
                         <li
                           key={bullet}
-                          className="flex items-start gap-2.5 text-white/70 text-sm"
+                          className="flex items-start gap-2.5 text-white/70 text-[11px] lg:text-[13px]"
                         >
                           <CheckCircle2
                             size={16}

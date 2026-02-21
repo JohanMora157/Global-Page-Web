@@ -66,7 +66,7 @@ export default function HomePage() {
               </RevealOnScroll>
 
               <RevealOnScroll delay={1}>
-                <p className="mt-[25px] lg:text-[17px] leading-[1.6] text-white/85 max-w-[520px]">
+                <p className="mt-[25px] text-[14px] lg:text-[17px] leading-[1.6] text-white/85 max-w-[520px]">
                 En Global Automate centralizamos herramientas, creamos experiencias web premium, desarrollamos software a medida y reforzamos tu ciberseguridad para escalar con confianza.
                 </p>
 
@@ -119,7 +119,7 @@ export default function HomePage() {
                   {whatWeDoItems.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2 text-white/70 text-sm leading-relaxed"
+                      className="flex items-start gap-2 text-white/70 text-[13px] leading-relaxed"
                     >
                       <CheckCircle2
                         size={16}
@@ -145,7 +145,7 @@ export default function HomePage() {
                   {whyUsItems.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2 text-white/70 text-sm leading-relaxed"
+                      className="flex items-start gap-2 text-white/70 text-[13px] leading-relaxed"
                     >
                       <CheckCircle2
                         size={16}
@@ -171,7 +171,7 @@ export default function HomePage() {
                   {impactItems.map((item) => (
                     <li
                       key={item}
-                      className="flex items-start gap-2 text-white/70 text-sm leading-relaxed"
+                      className="flex items-start gap-2 text-white/70 text-[13px] leading-relaxed"
                     >
                       <CheckCircle2
                         size={16}
@@ -188,7 +188,7 @@ export default function HomePage() {
       </section>
 
       {/* Partners / Integrations */}
-      <section className="relative py-16 px-6 -mt-[80px] md:-mt-[-60px]">
+      <section className="relative py-16 px-6 -mt-[0px] md:-mt-[-60px]">
         <div className="mx-auto max-w-7xl text-center">
           <RevealOnScroll>
             <p className="text-white/90 text-sm font-medium uppercase tracking-widest mb-8">

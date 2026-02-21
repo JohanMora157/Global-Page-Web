@@ -3,7 +3,10 @@ import { OrbitLogo } from "@/components/orbit-logo"
 
 export function Footer() {
   return (
-    <footer className="relative z-10 border-t border-white/10 bg-[#1a0230]/60 backdrop-blur-sm">
+    <footer
+      className="relative z-10 border-t border-white/10 backdrop-blur-sm"
+      style={{ background: "linear-gradient(180deg, #1B0830 0%, #13001F 100%)" }}
+    >
       <div className="mx-auto max-w-7xl px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}

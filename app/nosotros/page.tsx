@@ -100,7 +100,7 @@ export default function NosotrosPage() {
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-6 text-white/80 text-lg lg:text-[17px] leading-relaxed max-w-3xl mx-auto text-pretty">
+            <p className="mt-7 text-white/80 text-[14px] lg:text-[17px] leading-relaxed max-w-3xl mx-auto text-pretty">
               Somos un equipo enfocado en construir soluciones digitales que
               realmente se usan: rapidas, seguras y escalables. No vendemos humo:
               entregamos sistemas que generan resultados.
@@ -110,10 +110,10 @@ export default function NosotrosPage() {
       </section>
 
       {/* Values */}
-      <section className="relative py-20 px-6">
+      <section className="relative py-20 px-6 ">
         <div className="mx-auto max-w-7xl">
           <RevealOnScroll>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white text-center mb-12 text-balance">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-white text-center mb-12 text-balance mt-[-10px]">
               Nuestros valores{" "}
               <span className="gradient-text">fundamentales</span>
             </h2>
