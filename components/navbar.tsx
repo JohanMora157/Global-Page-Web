@@ -30,7 +30,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#200340]/80 backdrop-blur-xl shadow-lg shadow-[#00F5FF]/5"
+          ? "bg-[#250b3d]/80 backdrop-blur-xl shadow-lg shadow-[#00F5FF]/5"
           : "bg-transparent"
       }`}
     >
@@ -58,7 +58,7 @@ export function Navbar() {
                 className={`nav-link text-sm font-medium transition-colors duration-200 ${
                   pathname === link.href
                     ? "active text-[#00F5FF]"
-                    : "text-white/80 hover:text-white"
+                    : "text-white/120 hover:text-white"
                 }`}
               >
                 {link.label}

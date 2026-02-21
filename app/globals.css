@@ -60,7 +60,7 @@
 
 /* Custom gradient background */
 .bg-main-gradient {
-  background: linear-gradient(135deg, #2b0547, #370174, #200340);
+  background: linear-gradient(135deg, #290f3c, #250b3d, #290f3c);
 }
 
 /* Glassmorphism card */
@@ -249,7 +249,7 @@
 
 .glow-chatbot {
   /* --accent2: #00FF85; */
-  background: linear-gradient(135deg, var(--accent1));
+  background: linear-gradient(100deg, var(--accent1), var(--accent2));
   color: #0b0b0b;
   box-shadow:
     0 0 10px rgba(77, 159, 255, 0.14),
@@ -433,7 +433,7 @@
 
 @keyframes ga-pulse {
   0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.06); }
+  50%      { transform: scale(1.12); }
 }
 
 

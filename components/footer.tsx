@@ -9,12 +9,12 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-10.5 mb-4">
-              <OrbitLogo size={65} />
+              <OrbitLogo size={60} />
               <span className="font-heading text-lg font-bold text-white">
                 Global <span className="gradient-text">Automate</span>
               </span>
             </Link>
-            <p className="text-white/50 text-sm leading-relaxed">
+            <p className="text-white/70 text-sm leading-relaxed pl-5">
               Automatizamos, construimos y protegemos tu operacion digital.
             </p>
           </div>
@@ -28,7 +28,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="text-white/50 hover:text-white text-sm transition-colors"
+                  className="text-white/70 hover:text-[#00F5FF] text-sm transition-colors"
                 >
                   Inicio
                 </Link>
@@ -36,7 +36,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/servicios"
-                  className="text-white/50 hover:text-white text-sm transition-colors"
+                  className="text-white/70 hover:text-[#00F5FF] text-sm transition-colors"
                 >
                   Servicios
                 </Link>
@@ -44,7 +44,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/nosotros"
-                  className="text-white/50 hover:text-white text-sm transition-colors"
+                  className="text-white/70 hover:text-[#00F5FF] text-sm transition-colors"
                 >
                   Sobre Nosotros
                 </Link>
@@ -52,7 +52,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/contacto"
-                  className="text-white/50 hover:text-white text-sm transition-colors"
+                  className="text-white/70 hover:text-[#00F5FF] text-sm transition-colors"
                 >
                   Contactanos
                 </Link>
@@ -69,7 +69,7 @@ export function Footer() {
               <li>
                 <a
                   href="tel:+573181324136"
-                  className="text-white/50 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-[#2EE59D] transition-colors"
                 >
                   +57 318 1324136
                 </a>
@@ -77,7 +77,7 @@ export function Footer() {
               <li>
                 <a
                   href="mailto:contacto@globalautomate.co"
-                  className="text-white/50 hover:text-white transition-colors"
+                  className="text-white/70 hover:text-[#2EE59D] transition-colors"
                 >
                   contacto@globalautomate.co
                 </a>
@@ -95,7 +95,7 @@ export function Footer() {
                 href="https://x.com/GlobAutomate"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/50 hover:text-[#00F5FF] transition-colors"
+                className="text-white/70 hover:text-[#00F5FF] transition-colors"
                 aria-label="X (Twitter)"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -106,7 +106,7 @@ export function Footer() {
                 href="https://www.instagram.com/globalautomate.col/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/50 hover:text-[#00F5FF] transition-colors"
+                className="text-white/70 hover:text-[#00F5FF] transition-colors"
                 aria-label="Instagram"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -121,7 +121,7 @@ export function Footer() {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/50 hover:text-[#25D366] transition-colors"
+                className="text-white/70 hover:text-[#25D366] transition-colors"
                 aria-label="WhatsApp"
                 >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -132,7 +132,7 @@ export function Footer() {
                 href="https://www.tiktok.com/@globalautomate.col"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/50 hover:text-[#00F5FF] transition-colors"
+                className="text-white/70 hover:text-[#00F5FF] transition-colors"
                 aria-label="TikTok"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">

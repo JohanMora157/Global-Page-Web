@@ -87,7 +87,7 @@ export default function ContactoPage() {
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-6 text-white/70 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto text-pretty">
+            <p className="mt-6 text-white/95 text-lg lg:text-[19px] leading-relaxed max-w-2xl mx-auto text-pretty">
               Cuentanos tu caso y te proponemos un plan claro: automatizacion,
               web, software o seguridad.
             </p>
@@ -105,7 +105,7 @@ export default function ContactoPage() {
                 <h2 className="font-heading text-2xl font-bold text-white mb-2">
                   Medios de contacto
                 </h2>
-                <p className="text-white/50 text-sm mb-6">
+                <p className="text-white/70 text-sm mb-6">
                   Elige el canal que prefieras. Te respondemos en menos de 24 horas.
                 </p>
               </RevealOnScroll>
@@ -124,7 +124,7 @@ export default function ContactoPage() {
                         <Icon className="text-[#00F5FF]" size={20} />
                       </div>
                       <div>
-                        <p className="text-white/40 text-xs font-medium uppercase tracking-wide">
+                        <p className="bg-gradient-to-r from-[#00F5FF] to-[#2EE59D] bg-clip-text text-transparent text-xs font-medium uppercase tracking-wide">
                           {method.label}
                         </p>
                         <p className="text-white text-sm font-medium">

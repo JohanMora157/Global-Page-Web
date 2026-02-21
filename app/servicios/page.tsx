@@ -221,7 +221,7 @@ export default function ServiciosPage() {
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-6 text-white/70 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto text-pretty">
+            <p className="mt-6 text-white/70 lg:text-[18.5px] md:text-xl leading-relaxed max-w-2xl mx-auto text-pretty">
               Disenamos, desarrollamos e integramos soluciones digitales que
               convierten procesos lentos en resultados medibles.
             </p>

@@ -7,6 +7,7 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
   const [errors, setErrors] = useState<Record<string, string>>({})
+  const [servicioValue, setServicioValue] = useState("")
 
   const validate = (formData: FormData) => {
     const newErrors: Record<string, string> = {}
@@ -67,6 +68,7 @@ export function ContactForm() {
         setIsSuccess(true)
         setTimeout(() => {
           setIsSuccess(false)
+          setServicioValue("")
           form.reset()
         }, 4000)
       } else {
@@ -165,22 +167,23 @@ export function ContactForm() {
         <select
           id="servicio"
           name="servicio"
-          defaultValue=""
-          className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:border-[#00F5FF]/50 focus:ring-1 focus:ring-[#00F5FF]/50 transition-colors appearance-none"
+          value={servicioValue}
+          onChange={(e) => setServicioValue(e.target.value)}
+          className={`w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:outline-none focus:border-[#00F5FF]/50 focus:ring-1 focus:ring-[#00F5FF]/50 transition-colors appearance-none ${servicioValue === "" ? "text-white/30" : "text-white"}`}
         >
-          <option value="" disabled className="bg-[#200340] text-white/50">
+          <option value="" disabled className="bg-[#200340] text-white/70">
             Selecciona un servicio
           </option>
-          <option value="automatizaciones" className="bg-[#200340]">
+          <option value="automatizaciones" className="bg-[#200340] text-white/70">
             Automatizaciones
           </option>
-          <option value="web" className="bg-[#200340]">
+          <option value="web" className="bg-[#200340] text-white/70">
             Desarrollo Web
           </option>
-          <option value="software" className="bg-[#200340]">
+          <option value="software" className="bg-[#200340] text-white/70">
             Software a Medida
           </option>
-          <option value="ciberseguridad" className="bg-[#200340]">
+          <option value="ciberseguridad" className="bg-[#200340] text-white/70">
             Ciberseguridad
           </option>
         </select>

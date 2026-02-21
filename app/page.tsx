@@ -66,17 +66,17 @@ export default function HomePage() {
               </RevealOnScroll>
 
               <RevealOnScroll delay={1}>
-                <p className="mt-6 text-muted-foreground text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0">
+                <p className="mt-[25px] lg:text-[17px] leading-[1.6] text-white/85 max-w-[520px]">
                 En Global Automate centralizamos herramientas, creamos experiencias web premium, desarrollamos software a medida y reforzamos tu ciberseguridad para escalar con confianza.
                 </p>
 
               </RevealOnScroll>
 
               <RevealOnScroll delay={2}>
-                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <div className="mt-14 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start md:-mt-[-75px]">
               <Link
                 href="/contacto"
-                className="glow-btn px-9 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
+                className="glow-btn px-6 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
               >
                 Cotizar Servicio
                 <ArrowRight size={18} />
@@ -84,7 +84,7 @@ export default function HomePage() {
 
               <Link
                 href="/servicios"
-                className="glow-btn-outline px-9 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
+                className="glow-btn-outline px-6 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
               >
                 Ver servicios
               </Link>
@@ -103,7 +103,7 @@ export default function HomePage() {
       </section>
 
       {/* Three cards section */}
-      <section className="relative py-5 px-6">
+      <section className="relative z-10 px-6 pt-0 pb-5 md:-mt-[5px]">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Que hacemos */}
@@ -188,10 +188,10 @@ export default function HomePage() {
       </section>
 
       {/* Partners / Integrations */}
-      <section className="relative py-16 px-6">
+      <section className="relative py-16 px-6 -mt-[80px] md:-mt-[-60px]">
         <div className="mx-auto max-w-7xl text-center">
           <RevealOnScroll>
-            <p className="text-white/40 text-sm font-medium uppercase tracking-widest mb-8">
+            <p className="text-white/90 text-sm font-medium uppercase tracking-widest mb-8">
               Integraciones y partners
             </p>
           </RevealOnScroll>
@@ -221,7 +221,7 @@ export default function HomePage() {
             <RevealOnScroll delay={1}>
               <GlassCard className="text-center">
                 <CountUp end={70} suffix="%" prefix="+" />
-                <p className="mt-2 text-white/60 text-sm">
+                <p className="mt-2 text-white/80 text-sm">
                   Eficiencia operativa
                 </p>
               </GlassCard>
@@ -230,7 +230,7 @@ export default function HomePage() {
             <RevealOnScroll delay={2}>
               <GlassCard className="text-center">
                 <CountUp end={15} prefix="-" />
-                <p className="mt-2 text-white/60 text-sm">
+                <p className="mt-2 text-white/80 text-sm">
                   Horas/semana en tareas manuales
                 </p>
               </GlassCard>
@@ -239,7 +239,7 @@ export default function HomePage() {
             <RevealOnScroll delay={3}>
               <GlassCard className="text-center">
                 <CountUp end={3} suffix="s" />
-                <p className="mt-2 text-white/60 text-sm">
+                <p className="mt-2 text-white/80 text-sm">
                   Tiempo de respuesta automatizada
                 </p>
               </GlassCard>
@@ -249,20 +249,22 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-20 px-6">
+      <section className="relative py-20 px-6 -mt-[80px] md:-mt-[25px]">
         <div className="mx-auto max-w-3xl text-center">
           <RevealOnScroll>
             <GlassCard hover={false} className="py-12 px-8">
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
-                {"Listo para transformar tu operacion?"}
+                {"Listo para "}
+                <span className="gradient-text">transformar</span>
+                {" tu negocio?"} 
               </h2>
-              <p className="text-white/60 mb-8 max-w-lg mx-auto text-pretty">
+              <p className="mt-10 text-white/60 mb-8 max-w-lg mx-auto text-pretty">
                 Agenda una demo personalizada y descubre como automatizar,
                 desarrollar y proteger tu negocio digital.
               </p>
               <Link
                 href="/contacto"
-                className="glow-btn px-8 py-3.5 rounded-lg font-semibold text-white inline-flex items-center gap-2"
+                className="mt-2 glow-btn px-8 py-3.5 rounded-lg font-semibold text-white inline-flex items-center gap-2"
               >
                 Cotizar Servicio
                 <ArrowRight size={18} />

@@ -32,7 +32,7 @@ export function ServiceModal({ title, children, detail }: ServiceModalProps) {
         >
           {/* Backdrop */}
           <div
-            className="absolute inset-0 bg-[#200340]/80 backdrop-blur-sm"
+            className="absolute inset-0 bg-[#290f3c]/80 backdrop-blur-5xl"
             onClick={() => setIsOpen(false)}
             aria-hidden="true"
           />
@@ -40,7 +40,7 @@ export function ServiceModal({ title, children, detail }: ServiceModalProps) {
           {/* Modal content */}
           <div className="relative glass-card rounded-2xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto animate-in fade-in zoom-in-95 duration-200">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="font-heading text-2xl font-bold text-white">
+              <h3 className="font-heading text-2xl font-bold bg-gradient-to-r from-[#00F5FF] to-[#2EE59D] bg-clip-text text-transparent">
                 {title}
               </h3>
               <button

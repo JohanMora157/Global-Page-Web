@@ -100,7 +100,7 @@ export default function NosotrosPage() {
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-6 text-white/70 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-pretty">
+            <p className="mt-6 text-white/80 text-lg lg:text-[17px] leading-relaxed max-w-3xl mx-auto text-pretty">
               Somos un equipo enfocado en construir soluciones digitales que
               realmente se usan: rapidas, seguras y escalables. No vendemos humo:
               entregamos sistemas que generan resultados.
@@ -131,7 +131,7 @@ export default function NosotrosPage() {
                     <h3 className="font-heading text-lg font-bold text-white mb-2">
                       {value.title}
                     </h3>
-                    <p className="text-white/50 text-sm leading-relaxed">
+                    <p className="text-white/70 text-sm leading-relaxed">
                       {value.description}
                     </p>
                   </GlassCard>
@@ -147,7 +147,7 @@ export default function NosotrosPage() {
         <div className="mx-auto max-w-4xl text-center">
           <RevealOnScroll>
             <GlassCard hover={false} className="py-12 px-8">
-              <p className="text-white/30 text-sm font-medium uppercase tracking-widest mb-4">
+              <p className="text-white/60 text-sm font-medium uppercase tracking-widest mb-4">
                 Nuestra esencia
               </p>
               <blockquote className="font-heading text-2xl md:text-3xl font-bold text-white leading-snug text-balance">
@@ -168,7 +168,7 @@ export default function NosotrosPage() {
               Stack &{" "}
               <span className="gradient-text">Tecnologias</span>
             </h2>
-            <p className="text-white/50 text-center mb-12 max-w-xl mx-auto">
+            <p className="text-white/75 text-center mb-12 max-w-xl mx-auto">
               Herramientas y plataformas que dominamos para construir tus soluciones.
             </p>
           </RevealOnScroll>
@@ -211,7 +211,7 @@ export default function NosotrosPage() {
                   <p className="text-[#00F5FF] text-sm font-medium mb-2">
                     {member.role}
                   </p>
-                  <p className="text-white/50 text-sm leading-relaxed">
+                  <p className="text-white/70 text-sm leading-relaxed">
                     {member.description}
                   </p>
                 </GlassCard>

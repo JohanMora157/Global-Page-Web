@@ -62,7 +62,7 @@ export function FaqAccordion() {
           <AccordionTrigger className="text-white font-medium text-left py-5 hover:no-underline hover:text-[#00F5FF] transition-colors [&[data-state=open]]:text-[#00F5FF]">
             {faq.question}
           </AccordionTrigger>
-          <AccordionContent className="text-white/60 leading-relaxed pb-5">
+          <AccordionContent className="text-white/70 leading-relaxed pb-5">
             {faq.answer}
           </AccordionContent>
         </AccordionItem>
