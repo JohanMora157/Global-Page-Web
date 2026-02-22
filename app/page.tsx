@@ -13,16 +13,16 @@ import {
 
 const whatWeDoItems = [
   "Ahorra hasta 70% de tiempo operativo",
-  "Conectamos tus sistemas para que trabajen en sincronia",
+  "Conectamos tus sistemas para que trabajen en sincronía",
 ]
 
 const whyUsItems = [
   "Soluciones seguras, escalables y medibles",
-  "Menos errores, mas control",
+  "Menos errores, m\u00e1s control",
 ]
 
 const impactItems = [
-  "Automatizacion + desarrollo + seguridad en un solo equipo",
+  "Automatización + desarrollo + seguridad en un solo equipo",
 ]
 
 const partners = [
@@ -60,14 +60,14 @@ export default function HomePage() {
                 <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight text-balance">
                   Automatiza, construye y{" "}
                   <span className="gradient-text">
-                    protege tu operacion digital.
+                    protege tu operación digital.
                   </span>
                 </h1>
               </RevealOnScroll>
 
               <RevealOnScroll delay={1}>
-                <p className="mt-[25px] text-[14px] lg:text-[17px] leading-[1.6] text-white/85 max-w-[520px]">
-                En Global Automate centralizamos herramientas, creamos experiencias web premium, desarrollamos software a medida y reforzamos tu ciberseguridad para escalar con confianza.
+                <p className="mt-[25px] text-[14.5px] lg:text-[17px] leading-[1.6] text-white/85 max-w-[520px] mx-auto lg:mx-0">
+                  En Global Automate centralizamos herramientas, creamos experiencias web premium, desarrollamos software a medida y reforzamos tu ciberseguridad para escalar con confianza.
                 </p>
 
               </RevealOnScroll>
@@ -213,7 +213,7 @@ export default function HomePage() {
           <RevealOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white text-center mb-12 text-balance">
               Resultados que{" "}
-              <span className="gradient-text">hablan por si solos</span>
+              <span className="gradient-text">hablan por sí solos</span>
             </h2>
           </RevealOnScroll>
 
@@ -258,8 +258,8 @@ export default function HomePage() {
                 <span className="gradient-text">transformar</span>
                 {" tu negocio?"} 
               </h2>
-              <p className="mt-10 text-white/60 mb-8 max-w-lg mx-auto text-pretty">
-                Agenda una demo personalizada y descubre como automatizar,
+              <p className="mt-10 text-white/75 mb-8 max-w-lg mx-auto text-pretty">
+                Agenda una demo personalizada y descubre cómo automatizar,
                 desarrollar y proteger tu negocio digital.
               </p>
               <Link

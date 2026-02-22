@@ -12,15 +12,15 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Sobre Nosotros | Global Automate",
   description:
-    "Somos un equipo enfocado en construir soluciones digitales rapidas, seguras y escalables.",
+    "Somos un equipo enfocado en construir soluciones digitales rápidas, seguras y escalables.",
 }
 
 const values = [
   {
     icon: Lightbulb,
-    title: "Innovacion",
+    title: "Innovación",
     description:
-      "Exploramos constantemente nuevas tecnologias y enfoques para ofrecer soluciones que marquen la diferencia.",
+      "Exploramos constantemente nuevas tecnologías y enfoques para ofrecer soluciones que marquen la diferencia.",
   },
   {
     icon: Target,
@@ -38,7 +38,7 @@ const values = [
     icon: Eye,
     title: "Transparencia",
     description:
-      "Comunicacion clara, reportes detallados y sin sorpresas. Sabes exactamente que estamos haciendo y por que.",
+      "Comunicación clara, reportes detallados y sin sorpresas. Sabes exactamente que estamos haciendo y por qué.",
   },
 ]
 
@@ -58,8 +58,8 @@ const techStack = [
 const team = [
   {
     name: "Co-founder",
-    role: "Automatizacion",
-    description: "Experto en flujos de trabajo y automatizacion de procesos empresariales.",
+    role: "Automatización",
+    description: "Experto en flujos de trabajo y automatización de procesos empresariales.",
   },
   {
     name: "Co-founder",
@@ -74,12 +74,12 @@ const team = [
   {
     name: "Co-founder",
     role: "Seguridad",
-    description: "Especialista en ciberseguridad web y proteccion de datos empresariales.",
+    description: "Especialista en ciberseguridad web y protección de datos empresariales.",
   },
   {
     name: "Equipo",
-    role: "Soporte & Implementacion",
-    description: "Soporte continuo y acompanamiento en cada etapa del proyecto.",
+    role: "Soporte & Implementación",
+    description: "Soporte continuo y acompañamiento en cada etapa del proyecto.",
   },
 ]
 
@@ -100,9 +100,9 @@ export default function NosotrosPage() {
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-7 text-white/80 text-[14px] lg:text-[17px] leading-relaxed max-w-3xl mx-auto text-pretty">
+            <p className="mt-7 text-white/80 text-[14.5px] md:text-[17lg:text-[17px] leading-relaxed max-w-3xl mx-auto text-pretty">
               Somos un equipo enfocado en construir soluciones digitales que
-              realmente se usan: rapidas, seguras y escalables. No vendemos humo:
+              realmente se usan: rápidas, seguras y escalables. No vendemos humo:
               entregamos sistemas que generan resultados.
             </p>
           </RevealOnScroll>
@@ -151,7 +151,7 @@ export default function NosotrosPage() {
                 Nuestra esencia
               </p>
               <blockquote className="font-heading text-2xl md:text-3xl font-bold text-white leading-snug text-balance">
-                {"\"Tu crecimiento es el norte: automatizamos, desarrollamos y aseguramos tu operacion para que "}
+                {"\"Tu crecimiento es el norte: automatizamos, desarrollamos y aseguramos tu operación para que "}
                 <span className="gradient-text">escales con confianza.</span>
                 {"\""}
               </blockquote>
@@ -166,7 +166,7 @@ export default function NosotrosPage() {
           <RevealOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white text-center mb-4 text-balance">
               Stack &{" "}
-              <span className="gradient-text">Tecnologias</span>
+              <span className="gradient-text">Tecnologías</span>
             </h2>
             <p className="text-white/75 text-center mb-12 max-w-xl mx-auto">
               Herramientas y plataformas que dominamos para construir tus soluciones.

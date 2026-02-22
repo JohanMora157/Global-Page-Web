@@ -10,9 +10,9 @@ import {
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contactanos | Global Automate",
+  title: "Contáctanos | Global Automate",
   description:
-    "Cuentanos tu caso y te proponemos un plan claro: automatizacion, web, software o seguridad.",
+    "Cuéntanos tu caso y te proponemos un plan claro: automatización, web, software o seguridad.",
 }
 
 const contactMethods = [
@@ -33,7 +33,7 @@ const contactMethods = [
     label: "WhatsApp",
     value: "Escríbenos por WhatsApp",
     href: `https://wa.me/573181324136?text=${encodeURIComponent(
-      "HHola Global Automate!! Estoy interesado en sus servicios. ¿Podemos agendar una demo?"
+      "Hola Global Automate!! Estoy interesado en sus servicios. ¿Podemos agendar una demo?"
     )}`,
     external: true,
   },
@@ -83,12 +83,12 @@ export default function ContactoPage() {
         <div className="mx-auto max-w-4xl text-center">
           <RevealOnScroll>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white text-balance">
-              <span className="gradient-text">Contactanos</span>
+              <span className="gradient-text">Contáctanos</span>
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-6 text-white/95 text-lg lg:text-[19px] leading-relaxed max-w-2xl mx-auto text-pretty">
-              Cuentanos tu caso y te proponemos un plan claro: automatizacion,
+            <p className="mt-6 text-white/95 text-[15px] lg:text-[19px] leading-relaxed max-w-2xl mx-auto text-pretty">
+              Cuéntanos tu caso y te proponemos un plan claro: automatización,
               web, software o seguridad.
             </p>
           </RevealOnScroll>

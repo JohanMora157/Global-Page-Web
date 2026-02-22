@@ -18,7 +18,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed pl-5">
-              Automatizamos, construimos y protegemos tu operacion digital.
+              Automatizamos, construimos y protegemos tu operación digital.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export function Footer() {
                   href="/contacto"
                   className="text-white/70 hover:text-[#00F5FF] text-sm transition-colors"
                 >
-                  Contactanos
+                  Contáctanos
                 </Link>
               </li>
             </ul>

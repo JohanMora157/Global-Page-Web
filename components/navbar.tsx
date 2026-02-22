@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/servicios", label: "Servicios" },
   { href: "/nosotros", label: "Sobre Nosotros" },
-  { href: "/contacto", label: "Contactanos" },
+  { href: "/contacto", label: "Contáctanos" },
 ]
 
 export function Navbar() {
@@ -50,7 +50,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center md:gap-5 lg:gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
@@ -69,7 +69,7 @@ export function Navbar() {
 
         <Link
           href="/contacto"
-          className="hidden md:inline-flex glow-btn px-5 py-2.5 rounded-lg text-sm font-semibold text-white"
+          className="hidden md:inline-flex glow-btn md:px-3 md:py-2 md:text-xs lg:px-5 lg:py-2.5 lg:text-sm rounded-lg font-semibold text-white"
         >
           Cotizar Servicio
         </Link>
@@ -112,7 +112,7 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
               className="glow-btn inline-block px-5 py-2.5 rounded-lg text-sm font-semibold text-white text-center w-full"
             >
-              Agendar demo
+              Cotizar demo
             </Link>
           </li>
         </ul>

@@ -21,24 +21,24 @@ const services = [
     icon: Workflow,
     title: "Automatizaciones",
     description:
-      "Eliminamos tareas repetitivas conectando tus herramientas favoritas. Desde flujos de WhatsApp hasta integraciones complejas con CRM, todo trabaja en sincronia sin intervencion manual.",
+      "Eliminamos tareas repetitivas conectando tus herramientas favoritas. Desde flujos de WhatsApp hasta integraciones complejas con CRM, todo trabaja en sincronía sin intervención manual.",
     bullets: [
       "Reduce hasta un 70% el tiempo en tareas operativas",
-      "Integracion con WhatsApp, Gmail, Sheets, CRM y mas",
-      "Flujos automaticos con respuesta en menos de 3 segundos",
+      "Integración con WhatsApp, Gmail, Sheets, CRM y más",
+      "Flujos automáticos con respuesta en menos de 3 segundos",
     ],
     integrations: ["WhatsApp", "Gmail", "Google Sheets", "CRM", "Webhooks"],
     detail: (
       <div className="flex flex-col gap-4">
         <p>
-          Nuestras automatizaciones conectan cada pieza de tu operacion digital para
+          Nuestras automatizaciones conectan cada pieza de tu operación digital para
           que funcione como un sistema unificado. Desde notificaciones inteligentes
-          en WhatsApp hasta sincronizacion de datos entre plataformas, eliminamos la
-          friccion manual.
+          en WhatsApp hasta sincronización de datos entre plataformas, eliminamos la
+          fricción manual.
         </p>
         <p>
           Trabajamos con herramientas como n8n, Make, APIs personalizadas y Webhooks
-          para crear flujos robustos que escalan con tu negocio. Cada automatizacion
+          para crear flujos robustos que escalan con tu negocio. Cada automatización
           se monitorea y optimiza de forma continua.
         </p>
         <h4 className="font-heading font-bold text-white mt-2">
@@ -47,15 +47,15 @@ const services = [
         <ul className="flex flex-col gap-2">
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Respuestas automaticas en WhatsApp Business
+            Respuestas automáticas en WhatsApp Business
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Sincronizacion de leads entre formularios y CRM
+            Sincronización de leads entre formularios y CRM
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Reportes automaticos en Google Sheets
+            Reportes automáticos en Google Sheets
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
@@ -69,23 +69,23 @@ const services = [
     icon: Globe,
     title: "Desarrollo Web",
     description:
-      "Creamos sitios web corporativos premium con rendimiento excepcional, SEO optimizado y analitica integrada. Tu presencia digital, a otro nivel.",
+      "Creamos sitios web corporativos premium con rendimiento excepcional, SEO optimizado y analítica integrada. Tu presencia digital, a otro nivel.",
     bullets: [
       "Performance score superior a 90 en Lighthouse",
-      "SEO tecnico base incluido en cada proyecto",
-      "Analitica integrada con Google Analytics y Search Console",
+      "SEO técnico base incluido en cada proyecto",
+      "Analítica integrada con Google Analytics y Search Console",
     ],
     integrations: [],
     detail: (
       <div className="flex flex-col gap-4">
         <p>
-          Cada sitio web que desarrollamos esta pensado para convertir. Usamos las
-          tecnologias mas modernas para garantizar velocidad, accesibilidad y una
+          Cada sitio web que desarrollamos está pensado para convertir. Usamos las
+          tecnologías más modernas para garantizar velocidad, accesibilidad y una
           experiencia de usuario excepcional.
         </p>
         <p>
           Desde landing pages de alto impacto hasta sitios corporativos complejos,
-          nuestro enfoque combina diseno premium con ingenieria de rendimiento.
+          nuestro enfoque combina diseño premium con ingeniería de rendimiento.
         </p>
         <h4 className="font-heading font-bold text-white mt-2">
           Lo que incluimos:
@@ -93,11 +93,11 @@ const services = [
         <ul className="flex flex-col gap-2">
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Diseno responsive y accesible (WCAG)
+            Diseño responsive y accesible (WCAG)
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Optimizacion de Core Web Vitals
+            Optimización de Core Web Vitals
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
@@ -115,9 +115,9 @@ const services = [
     icon: Code2,
     title: "Software Web a Medida",
     description:
-      "Desarrollamos dashboards, backoffice, sistemas internos e integraciones personalizadas. Software que se adapta a tu operacion, no al reves.",
+      "Desarrollamos dashboards, backoffice, sistemas internos e integraciones personalizadas. Software que se adapta a tu operación, no al revés.",
     bullets: [
-      "Dashboards con datos en tiempo real y visualizacion avanzada",
+      "Dashboards con datos en tiempo real y visualización avanzada",
       "Sistemas internos que reducen errores operativos en un 60%",
       "Integraciones API con cualquier plataforma o servicio externo",
     ],
@@ -126,10 +126,10 @@ const services = [
       <div className="flex flex-col gap-4">
         <p>
           No todas las empresas operan igual. Por eso desarrollamos software web 100%
-          personalizado que se ajusta a tus procesos, flujos y necesidades especificas.
+          personalizado que se ajusta a tus procesos, flujos y necesidades específicas.
         </p>
         <p>
-          Desde paneles de administracion hasta plataformas complejas con multiples
+          Desde paneles de administración hasta plataformas complejas con múltiples
           roles y permisos, construimos sistemas que tu equipo realmente va a usar.
         </p>
         <h4 className="font-heading font-bold text-white mt-2">
@@ -138,7 +138,7 @@ const services = [
         <ul className="flex flex-col gap-2">
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Dashboards operativos y de gestion
+            Dashboards operativos y de gestión
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
@@ -146,7 +146,7 @@ const services = [
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Plataformas con roles, permisos y auditoria
+            Plataformas con roles, permisos y auditoría
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
@@ -160,23 +160,23 @@ const services = [
     icon: ShieldCheck,
     title: "Ciberseguridad Web",
     description:
-      "Protegemos tu operacion digital con auditoria basica, hardening, buenas practicas y proteccion de datos. Seguridad real, no solo promesas.",
+      "Protegemos tu operación digital con auditoría básica, hardening, buenas prácticas y protección de datos. Seguridad real, no solo promesas.",
     bullets: [
-      "Auditoria de seguridad con reporte detallado de vulnerabilidades",
+      "Auditoría de seguridad con reporte detallado de vulnerabilidades",
       "Hardening de servidores y aplicaciones web",
-      "Implementacion de buenas practicas OWASP",
+      "Implementación de buenas prácticas OWASP",
     ],
     integrations: [],
     detail: (
       <div className="flex flex-col gap-4">
         <p>
-          La seguridad no es opcional. Realizamos auditorias completas de tu
+          La seguridad no es opcional. Realizamos auditorías completas de tu
           infraestructura web, identificamos vulnerabilidades y aplicamos las
           correcciones necesarias para proteger tu negocio.
         </p>
         <p>
-          Seguimos los estandares OWASP y las mejores practicas de la industria para
-          garantizar que tus datos y los de tus clientes esten seguros.
+          Seguimos los estándares OWASP y las mejores prácticas de la industria para
+          garantizar que tus datos y los de tus clientes estén seguros.
         </p>
         <h4 className="font-heading font-bold text-white mt-2">
           Nuestro enfoque:
@@ -184,15 +184,15 @@ const services = [
         <ul className="flex flex-col gap-2">
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Escaneo de vulnerabilidades y pentesting basico
+            Escaneo de vulnerabilidades y pentesting básico
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Configuracion segura de headers HTTP
+            Configuración segura de headers HTTP
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
-            Proteccion contra XSS, CSRF e inyeccion SQL
+            Protección contra XSS, CSRF e inyección SQL
           </li>
           <li className="flex items-start gap-2">
             <CheckCircle2 size={16} className="text-[#00FF85] mt-0.5 shrink-0" />
@@ -221,8 +221,8 @@ export default function ServiciosPage() {
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-6 text-white/70 text-[14px] lg:text-[18px] md:text-xl leading-relaxed max-w-2xl mx-auto text-pretty">
-              Disenamos, desarrollamos e integramos soluciones digitales que
+            <p className="mt-6 text-white/70 text-[14.5px] lg:text-[18px] md:text-xl leading-relaxed max-w-2xl mx-auto text-pretty">
+              Diseñamos, desarrollamos e integramos soluciones digitales que
               convierten procesos lentos en resultados medibles.
             </p>
           </RevealOnScroll>
@@ -254,7 +254,7 @@ export default function ServiciosPage() {
                     <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">
                       {service.title}
                     </h3>
-                    <p className="text-white/60 text-[12px] lg:text-[15px] leading-relaxed">
+                    <p className="text-white/60 text-[13.5px] lg:text-[15px] leading-relaxed">
                       {service.description}
                     </p>
                     <ul className="flex flex-col gap-2.5">
