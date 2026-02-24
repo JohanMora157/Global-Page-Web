@@ -58,29 +58,29 @@ const techStack = [
 const team = [
   {
     name: "Co-founder",
-    role: "Automatización",
-    description: "Experto en flujos de trabajo y automatización de procesos empresariales.",
+    role: "Automatización y Software",
+    description: "Especialista en automatizar procesos clave y desarrollar software personalizado que optimiza la operación del negocio.",
   },
   {
     name: "Co-founder",
-    role: "Web",
-    description: "Especialista en desarrollo web de alto rendimiento y experiencia de usuario.",
+    role: "Web y Automatización",
+    description: "Especialista en crear plataformas web eficientes, con una experiencia de usuario clara y procesos automatizados.",
   },
   {
     name: "Co-founder",
-    role: "Software",
-    description: "Arquitecto de software con enfoque en sistemas escalables y robustos.",
+    role: "Software y Seguridad",
+    description: "Especialista en crear plataformas web eficientes, con una experiencia de usuario clara y procesos automatizados",
   },
-  {
-    name: "Co-founder",
-    role: "Seguridad",
-    description: "Especialista en ciberseguridad web y protección de datos empresariales.",
-  },
-  {
-    name: "Equipo",
-    role: "Soporte & Implementación",
-    description: "Soporte continuo y acompañamiento en cada etapa del proyecto.",
-  },
+  // {
+  //   name: "Co-founder",
+  //   role: "Seguridad",
+  //   description: "Especialista en ciberseguridad web y protección de datos empresariales.",
+  // },
+  // {
+  //   name: "Equipo",
+  //   role: "Soporte & Implementación",
+  //   description: "Soporte continuo y acompañamiento en cada etapa del proyecto.",
+  // },
 ]
 
 export default function NosotrosPage() {
