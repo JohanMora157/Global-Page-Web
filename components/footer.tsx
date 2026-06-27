@@ -54,7 +54,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/contacto"
+                  href="/contacto#formulario"
                   className="text-white/70 hover:text-[#00F5FF] text-sm transition-colors"
                 >
                   Contáctanos

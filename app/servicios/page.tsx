@@ -1,7 +1,10 @@
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 import { GlassCard } from "@/components/glass-card"
 import { ServiceModal } from "@/components/servicios/service-modal"
+import Image from "next/image"
+import Link from "next/link"
 import {
+  ArrowRight,
   Workflow,
   Globe,
   Code2,
@@ -20,14 +23,18 @@ const services = [
   {
     icon: Workflow,
     title: "Automatizaciones",
+    image: "/images/services/automation.png",
+    imageAlt:
+      "Flujo de automatización conectando canales de atención, agenda, correo y datos",
     description:
-      "Eliminamos tareas repetitivas conectando tus herramientas favoritas. Desde flujos de WhatsApp hasta integraciones complejas con CRM, todo trabaja en sincronía sin intervención manual.",
+      "Diseñamos flujos que conectan tus canales de atención y herramientas de trabajo. Centralizamos conversaciones, organizamos datos y activamos acciones para que tu equipo pueda enfocarse en los casos que realmente necesitan atención humana.",
     bullets: [
-      "Reduce hasta un 70% el tiempo en tareas operativas",
-      "Integración con WhatsApp, Gmail, Sheets, CRM y más",
-      "Flujos automáticos con respuesta en menos de 3 segundos",
+      "Atención multicanal para WhatsApp, redes, web y correo",
+      "Captura, clasificación y distribución automática de prospectos",
+      "Seguimientos, recordatorios, agendamientos y alertas internas",
+      "Sincronización de información y reportes operativos",
     ],
-    integrations: ["WhatsApp", "Gmail", "Google Sheets", "CRM", "Webhooks"],
+    integrations: ["WhatsApp", "Redes sociales", "Gmail", "Google Sheets", "CRM", "Agendas"],
     detail: (
       <div className="flex flex-col gap-4">
         <p>
@@ -68,14 +75,18 @@ const services = [
   {
     icon: Globe,
     title: "Desarrollo Web",
+    image: "/images/services/web-development.png",
+    imageAlt:
+      "Diseño de página web adaptable mostrado en computador y teléfono móvil",
     description:
-      "Creamos sitios web corporativos premium con rendimiento excepcional, SEO optimizado y analítica integrada. Tu presencia digital, a otro nivel.",
+      "Creamos experiencias web rápidas, claras y preparadas para convertir visitas en oportunidades. Combinamos estrategia, diseño y desarrollo para que tu sitio represente bien la empresa y apoye sus objetivos comerciales.",
     bullets: [
-      "Performance score superior a 90 en Lighthouse",
-      "SEO técnico base incluido en cada proyecto",
-      "Analítica integrada con Google Analytics y Search Console",
+      "Landing pages, sitios corporativos y catálogos digitales",
+      "Diseño adaptable para computadores, tablets y móviles",
+      "SEO técnico, rendimiento, accesibilidad y analítica",
+      "Formularios, WhatsApp, agendas, pagos e integraciones",
     ],
-    integrations: [],
+    integrations: ["Next.js", "CMS", "Analytics", "Search Console", "Pasarelas de pago"],
     detail: (
       <div className="flex flex-col gap-4">
         <p>
@@ -114,14 +125,18 @@ const services = [
   {
     icon: Code2,
     title: "Software Web a Medida",
+    image: "/images/services/custom-software.png",
+    imageAlt:
+      "Panel de software empresarial conectado con datos, usuarios y módulos operativos",
     description:
-      "Desarrollamos dashboards, backoffice, sistemas internos e integraciones personalizadas. Software que se adapta a tu operación, no al revés.",
+      "Convertimos procesos complejos en plataformas sencillas de usar. Construimos herramientas que reúnen la información, los permisos y las tareas de tu operación en un entorno diseñado específicamente para tu equipo.",
     bullets: [
-      "Dashboards con datos en tiempo real y visualización avanzada",
-      "Sistemas internos que reducen errores operativos en un 60%",
-      "Integraciones API con cualquier plataforma o servicio externo",
+      "Dashboards, portales de clientes y paneles administrativos",
+      "CRM, inventarios, órdenes y flujos de aprobación",
+      "Roles, permisos, historial de actividad y reportes",
+      "Integraciones API, pagos y datos en tiempo real",
     ],
-    integrations: [],
+    integrations: ["Dashboards", "CRM", "APIs", "Bases de datos", "Pagos", "Reportes"],
     detail: (
       <div className="flex flex-col gap-4">
         <p>
@@ -159,14 +174,18 @@ const services = [
   {
     icon: ShieldCheck,
     title: "Ciberseguridad Web",
+    image: "/images/services/cybersecurity.png",
+    imageAlt:
+      "Escudo digital protegiendo servidores y nodos de información empresarial",
     description:
-      "Protegemos tu operación digital con auditoría básica, hardening, buenas prácticas y protección de datos. Seguridad real, no solo promesas.",
+      "Revisamos los riesgos de tus aplicaciones y fortalecemos sus puntos críticos. Nuestro enfoque combina prevención, corrección y buenas prácticas para reducir la exposición de la operación y de los datos.",
     bullets: [
-      "Auditoría de seguridad con reporte detallado de vulnerabilidades",
-      "Hardening de servidores y aplicaciones web",
-      "Implementación de buenas prácticas OWASP",
+      "Diagnóstico y priorización de vulnerabilidades",
+      "Fortalecimiento de servidores y aplicaciones web",
+      "Controles de acceso, respaldos y protección de datos",
+      "Buenas prácticas OWASP y plan de remediación",
     ],
-    integrations: [],
+    integrations: ["Auditoría", "Hardening", "OWASP", "Monitoreo", "Backups"],
     detail: (
       <div className="flex flex-col gap-4">
         <p>
@@ -251,9 +270,9 @@ export default function ServiciosPage() {
                     <div className="w-14 h-14 rounded-xl bg-[#00F5FF]/10 flex items-center justify-center">
                       <Icon className="text-[#00F5FF]" size={28} />
                     </div>
-                    <h3 className="font-heading text-2xl md:text-3xl font-bold text-white">
+                    <h2 className="font-heading text-2xl md:text-3xl font-bold text-white">
                       {service.title}
-                    </h3>
+                    </h2>
                     <p className="text-white/60 text-[13.5px] lg:text-[15px] leading-relaxed">
                       {service.description}
                     </p>
@@ -288,13 +307,52 @@ export default function ServiciosPage() {
 
                   {/* Visual column — large hero-like illustration */}
                   <div className={`service-visual ${!isEven ? "lg:[direction:ltr]" : ""}`}>
-                    <Icon className="text-[#00F5FF]/20" size={140} strokeWidth={0.8} />
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 55vw"
+                      className="object-cover transition-transform duration-700 hover:scale-[1.025]"
+                    />
+                    <div className="service-visual-overlay" aria-hidden="true" />
+                    <div className="service-visual-badge">
+                      <Icon size={18} />
+                      <span>{service.title}</span>
+                    </div>
                   </div>
                 </div>
               </RevealOnScroll>
             )
           })}
         </div>
+      </section>
+
+      {/* Ongoing support */}
+      <section className="relative px-6 pb-24 pt-8">
+        <RevealOnScroll>
+          <div className="mx-auto grid max-w-[1200px] gap-8 rounded-2xl border border-white/10 bg-white/[0.035] p-7 backdrop-blur-sm md:grid-cols-[1fr_auto] md:items-center md:p-10">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#00FF85]">
+                Soporte y evolución continua
+              </p>
+              <h2 className="font-heading text-2xl font-bold text-white md:text-3xl">
+                La entrega no es el final del proyecto
+              </h2>
+              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/65 md:text-base">
+                Podemos acompañar tu solución con monitoreo, mantenimiento,
+                respaldos, ajustes menores y nuevas funcionalidades para que siga
+                siendo útil mientras tu empresa cambia y crece.
+              </p>
+            </div>
+            <Link
+              href="/contacto#formulario"
+              className="glow-btn inline-flex items-center justify-center gap-2 rounded-xl px-6 py-4 font-semibold"
+            >
+              Cuéntanos tu proyecto
+              <ArrowRight size={18} />
+            </Link>
+          </div>
+        </RevealOnScroll>
       </section>
     </div>
   )

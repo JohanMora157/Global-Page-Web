@@ -491,7 +491,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 320px;
+  min-height: 390px;
   position: relative;
   overflow: hidden;
 }
@@ -501,15 +501,43 @@
   inset: 0;
   background: radial-gradient(ellipse at center, rgba(0,245,255,0.06), transparent 70%);
   pointer-events: none;
+  z-index: 2;
+}
+.service-visual-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, transparent 55%, rgba(12, 1, 32, 0.72) 100%),
+    linear-gradient(90deg, rgba(55, 1, 116, 0.1), transparent 50%);
+  pointer-events: none;
+}
+.service-visual-badge {
+  position: absolute;
+  z-index: 3;
+  left: 1rem;
+  bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid rgba(0, 245, 255, 0.24);
+  border-radius: 0.75rem;
+  background: rgba(19, 3, 43, 0.72);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.78rem;
+  font-weight: 600;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 1024px) {
   .service-visual {
-    min-height: 240px;
+    min-height: 340px;
   }
 }
 @media (max-width: 640px) {
   .service-visual {
-    min-height: 200px;
+    min-height: 240px;
   }
 }
 

@@ -19,10 +19,36 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "Global Automate | Automatizacion y Soluciones Digitales",
+  title: {
+    default: "Global Automate | Automatización y Desarrollo de Software",
+    template: "%s | Global Automate",
+  },
   description:
-    "Automatizaciones, paginas web, software web y ciberseguridad. Centralizamos herramientas, creamos experiencias web premium y reforzamos tu ciberseguridad.",
-  generator: "v0.app",
+    "Automatización de procesos y canales de atención, desarrollo de páginas web, software a medida y ciberseguridad para empresas.",
+  applicationName: "Global Automate",
+  category: "technology",
+  keywords: [
+    "automatización de procesos",
+    "automatización de atención",
+    "desarrollo web",
+    "software a medida",
+    "ciberseguridad web",
+    "integración de sistemas",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "es_CO",
+    siteName: "Global Automate",
+    title: "Global Automate | Automatización y Desarrollo de Software",
+    description:
+      "Automatizamos procesos, desarrollamos páginas web y software a medida, y protegemos operaciones digitales.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Global Automate | Automatización y Desarrollo de Software",
+    description:
+      "Automatización, desarrollo web, software a medida y ciberseguridad para empresas.",
+  },
   icons: {
     icon: "/images/logo.png",
     shortcut: "/images/logo.png",

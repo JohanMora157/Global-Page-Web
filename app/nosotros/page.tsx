@@ -1,7 +1,13 @@
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 import { GlassCard } from "@/components/glass-card"
+import Link from "next/link"
 import {
+  ArrowRight,
+  CheckCircle2,
+  Compass,
+  Handshake,
   Lightbulb,
+  Layers3,
   Target,
   Gauge,
   Eye,
@@ -10,9 +16,9 @@ import {
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Sobre Nosotros | Global Automate",
+  title: "Sobre Nosotros",
   description:
-    "Somos un equipo enfocado en construir soluciones digitales rápidas, seguras y escalables.",
+    "Conoce el propósito, el equipo y la forma de trabajo de Global Automate: automatización, desarrollo web, software a medida y ciberseguridad.",
 }
 
 const values = [
@@ -100,11 +106,53 @@ export default function NosotrosPage() {
             </h1>
           </RevealOnScroll>
           <RevealOnScroll delay={1}>
-            <p className="mt-7 text-white/80 text-[14.5px] md:text-[17lg:text-[17px] leading-relaxed max-w-3xl mx-auto text-pretty">
-              Somos un equipo enfocado en construir soluciones digitales que
-              realmente se usan: rápidas, seguras y escalables. No vendemos humo:
-              entregamos sistemas que generan resultados.
+            <p className="mt-7 text-white/80 text-[14.5px] md:text-[17px] leading-relaxed max-w-3xl mx-auto text-pretty">
+              Somos un equipo que convierte necesidades reales de negocio en
+              automatizaciones, páginas web, software y soluciones de seguridad
+              claras, útiles y preparadas para crecer.
             </p>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* Purpose */}
+      <section className="relative px-6 py-12">
+        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
+          <RevealOnScroll direction="left">
+            <GlassCard className="h-full p-8">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#00F5FF]/10">
+                <Compass className="text-[#00F5FF]" size={25} />
+              </div>
+              <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#00F5FF]">
+                Nuestro propósito
+              </p>
+              <h2 className="font-heading text-2xl font-bold text-white md:text-3xl">
+                Hacer que la tecnología trabaje a favor de las personas
+              </h2>
+              <p className="mt-5 text-sm leading-relaxed text-white/70 md:text-base">
+                Ayudamos a las empresas a reducir tareas manuales, organizar mejor
+                su información, atender oportunidades y construir herramientas que
+                acompañen su crecimiento sin añadir complejidad innecesaria.
+              </p>
+            </GlassCard>
+          </RevealOnScroll>
+          <RevealOnScroll direction="right">
+            <GlassCard className="h-full p-8">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#00FF85]/10">
+                <Target className="text-[#00FF85]" size={25} />
+              </div>
+              <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#00FF85]">
+                Nuestra forma de pensar
+              </p>
+              <h2 className="font-heading text-2xl font-bold text-white md:text-3xl">
+                Primero entendemos el problema; después elegimos la tecnología
+              </h2>
+              <p className="mt-5 text-sm leading-relaxed text-white/70 md:text-base">
+                No partimos de una herramienta de moda ni de una solución genérica.
+                Analizamos el proceso, las personas y el objetivo para construir
+                exactamente lo que la operación necesita.
+              </p>
+            </GlassCard>
           </RevealOnScroll>
         </div>
       </section>
@@ -139,6 +187,46 @@ export default function NosotrosPage() {
               )
             })}
           </div>
+        </div>
+      </section>
+
+      {/* What makes us different */}
+      <section className="relative px-6 py-20">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <RevealOnScroll direction="left">
+            <div>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#00FF85]">
+                Cómo aportamos valor
+              </p>
+              <h2 className="font-heading text-3xl font-bold text-white md:text-4xl">
+                Más que entregar tecnología, construimos una solución contigo
+              </h2>
+              <p className="mt-5 leading-relaxed text-white/70">
+                Nuestro trabajo une visión de negocio, experiencia de usuario,
+                desarrollo y seguridad. Así evitamos soluciones aisladas que se ven
+                bien, pero no resuelven el proceso completo.
+              </p>
+            </div>
+          </RevealOnScroll>
+          <RevealOnScroll direction="right">
+            <div className="grid gap-4 sm:grid-cols-2">
+              {[
+                [Handshake, "Acompañamiento cercano", "Hablamos con claridad y mantenemos al equipo involucrado durante cada etapa."],
+                [Layers3, "Visión integral", "Conectamos automatización, web, software y seguridad cuando el proyecto lo necesita."],
+                [Target, "Soluciones con propósito", "Cada funcionalidad responde a un problema o a un objetivo concreto del negocio."],
+                [CheckCircle2, "Continuidad", "Podemos acompañar el mantenimiento, monitoreo y evolución después del lanzamiento."],
+              ].map(([Icon, title, description]) => {
+                const ItemIcon = Icon as typeof Target
+                return (
+                  <GlassCard key={title as string} className="h-full">
+                    <ItemIcon className="mb-4 text-[#00F5FF]" size={23} />
+                    <h3 className="font-heading text-lg font-bold text-white">{title as string}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-white/65">{description as string}</p>
+                  </GlassCard>
+                )
+              })}
+            </div>
+          </RevealOnScroll>
         </div>
       </section>
 
@@ -218,6 +306,33 @@ export default function NosotrosPage() {
               </RevealOnScroll>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="relative px-6 pb-24 pt-6">
+        <div className="mx-auto max-w-4xl text-center">
+          <RevealOnScroll>
+            <GlassCard hover={false} className="px-8 py-12">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#00F5FF]">
+                Construyamos algo útil
+              </p>
+              <h2 className="font-heading text-2xl font-bold text-white md:text-3xl">
+                Cuéntanos qué quieres mejorar en tu empresa
+              </h2>
+              <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-white/70">
+                Revisamos tu necesidad y te ayudamos a convertirla en una solución
+                clara, viable y alineada con tu operación.
+              </p>
+              <Link
+                href="/contacto#formulario"
+                className="glow-btn mt-8 inline-flex items-center gap-2 rounded-xl px-7 py-3.5 font-semibold"
+              >
+                Hablemos de tu proyecto
+                <ArrowRight size={18} />
+              </Link>
+            </GlassCard>
+          </RevealOnScroll>
         </div>
       </section>
     </div>

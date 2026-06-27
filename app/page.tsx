@@ -1,28 +1,57 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 import { GlassCard } from "@/components/glass-card"
 import { HeroVisual } from "@/components/home/hero-visual"
-import { CountUp } from "@/components/count-up"
 import {
-  Zap,
-  Shield,
-  BarChart3,
-  CheckCircle2,
   ArrowRight,
+  Bot,
+  Code2,
+  Globe,
+  MessagesSquare,
+  Search,
+  ShieldCheck,
+  Workflow,
 } from "lucide-react"
 
-const whatWeDoItems = [
-  "Ahorra hasta 70% de tiempo operativo",
-  "Conectamos tus sistemas para que trabajen en sincronía",
+export const metadata: Metadata = {
+  title: "Automatización, Desarrollo Web y Software | Global Automate",
+  description:
+    "Automatizamos procesos y canales de atención, desarrollamos páginas web y software a medida, y fortalecemos la ciberseguridad de empresas.",
+}
+
+const services = [
+  {
+    icon: Workflow,
+    title: "Automatización de procesos",
+    description:
+      "Conectamos canales de atención, formularios, agendas, CRM, correos y bases de datos para reducir tareas repetitivas y mejorar el seguimiento.",
+  },
+  {
+    icon: Globe,
+    title: "Desarrollo de páginas web",
+    description:
+      "Creamos sitios corporativos y landing pages rápidos, profesionales y orientados a convertir visitas en oportunidades comerciales.",
+  },
+  {
+    icon: Code2,
+    title: "Software web a medida",
+    description:
+      "Desarrollamos plataformas, paneles y sistemas internos adaptados a la forma en que realmente opera tu empresa.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Ciberseguridad web",
+    description:
+      "Evaluamos y fortalecemos entornos digitales con buenas prácticas de seguridad, protección de datos y prevención de vulnerabilidades.",
+  },
 ]
 
-const whyUsItems = [
-  "Soluciones seguras, escalables y medibles",
-  "Menos errores, m\u00e1s control",
-]
-
-const impactItems = [
-  "Automatización + desarrollo + seguridad en un solo equipo",
+const useCases = [
+  ["Atención multicanal", "Centraliza conversaciones de WhatsApp, redes sociales, páginas web, formularios y correo."],
+  ["Captación y seguimiento", "Registra interesados, clasifica oportunidades y activa seguimientos automáticos."],
+  ["Agendamiento y alertas", "Coordina citas y notifica al equipo cuando llega una nueva solicitud."],
+  ["Información organizada", "Envía los datos de cada cliente al CRM, Google Sheets, calendarios o bases de datos."],
 ]
 
 const partners = [
@@ -57,28 +86,33 @@ export default function HomePage() {
             {/* Text */}
             <div className="flex-1 text-center lg:text-left">
               <RevealOnScroll>
+                <p className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-[#00F5FF]">
+                  Tecnología para empresas que quieren avanzar
+                </p>
                 <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight text-balance">
-                  Automatiza, construye y{" "}
+                  Automatizamos procesos y creamos tecnología para{" "}
                   <span className="gradient-text">
-                    protege tu operación digital.
+                    hacer crecer tu negocio
                   </span>
                 </h1>
               </RevealOnScroll>
 
               <RevealOnScroll delay={1}>
                 <p className="mt-[25px] text-[14.5px] lg:text-[17px] leading-[1.6] text-white/85 max-w-[520px] mx-auto lg:mx-0">
-                  En Global Automate centralizamos herramientas, creamos experiencias web premium, desarrollamos software a medida y reforzamos tu ciberseguridad para escalar con confianza.
+                  Integramos tus canales de atención, desarrollamos páginas web y
+                  software a medida, y protegemos tu operación digital con soluciones
+                  de ciberseguridad.
                 </p>
 
               </RevealOnScroll>
 
               <RevealOnScroll delay={2}>
-                <div className="mt-14 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start md:-mt-[-75px]">
+                <div className="mt-9 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
-                href="/contacto"
+                href="/contacto#formulario"
                 className="glow-btn px-6 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
               >
-                Cotizar Servicio
+                Solicitar diagnóstico
                 <ArrowRight size={18} />
               </Link>
 
@@ -86,7 +120,7 @@ export default function HomePage() {
                 href="/servicios"
                 className="glow-btn-outline px-6 py-4 rounded-xl font-semibold text-center inline-flex items-center justify-center gap-2"
               >
-                Ver servicios
+                Conocer soluciones
               </Link>
             </div>
               </RevealOnScroll>
@@ -102,87 +136,72 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Three cards section */}
-      <section className="relative z-10 px-6 pt-0 pb-5 md:-mt-[5px]">
+      {/* Main services */}
+      <section className="relative z-10 px-6 py-20" aria-labelledby="services-title">
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Que hacemos */}
-            <RevealOnScroll delay={1}>
-              <GlassCard className="h-full">
-                <div className="w-12 h-12 rounded-lg bg-[#00F5FF]/10 flex items-center justify-center mb-4">
-                  <Zap className="text-[#00F5FF]" size={24} />
-                </div>
-                <h3 className="font-heading text-xl font-bold text-white mb-4">
-                  Que hacemos
-                </h3>
-                <ul className="flex flex-col gap-3">
-                  {whatWeDoItems.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2 text-white/70 text-[13px] leading-relaxed"
-                    >
-                      <CheckCircle2
-                        size={16}
-                        className="text-[#00FF85] mt-0.5 shrink-0"
-                      />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </GlassCard>
-            </RevealOnScroll>
+          <RevealOnScroll>
+            <div className="mx-auto mb-12 max-w-3xl text-center">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#00FF85]">Qué hacemos</p>
+              <h2 id="services-title" className="font-heading text-3xl md:text-4xl font-bold text-white text-balance">
+                Un equipo para automatizar, construir y proteger tu operación
+              </h2>
+              <p className="mt-5 leading-relaxed text-white/65">
+                Combinamos automatización, desarrollo y seguridad para resolver
+                problemas reales y crear una operación digital más eficiente.
+              </p>
+            </div>
+          </RevealOnScroll>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {services.map((service, index) => {
+              const Icon = service.icon
+              return (
+                <RevealOnScroll key={service.title} delay={(index % 2) + 1}>
+                  <GlassCard className="h-full">
+                    <div className="w-12 h-12 rounded-lg bg-[#00F5FF]/10 flex items-center justify-center mb-4">
+                      <Icon className="text-[#00F5FF]" size={24} />
+                    </div>
+                    <h3 className="font-heading text-xl font-bold text-white">{service.title}</h3>
+                    <p className="mt-3 text-white/65 text-sm leading-relaxed">{service.description}</p>
+                  </GlassCard>
+                </RevealOnScroll>
+              )
+            })}
+          </div>
+          <div className="mt-8 text-center">
+            <Link href="/servicios" className="inline-flex items-center gap-2 font-semibold text-[#00F5FF] hover:text-white">
+              Explorar todos los servicios <ArrowRight size={17} />
+            </Link>
+          </div>
+        </div>
+      </section>
 
-            {/* Por que elegirnos */}
-            <RevealOnScroll delay={2}>
-              <GlassCard className="h-full">
-                <div className="w-12 h-12 rounded-lg bg-[#00FF85]/10 flex items-center justify-center mb-4">
-                  <Shield className="text-[#00FF85]" size={24} />
-                </div>
-                <h3 className="font-heading text-xl font-bold text-white mb-4">
-                  Por que elegirnos
-                </h3>
-                <ul className="flex flex-col gap-3">
-                  {whyUsItems.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2 text-white/70 text-[13px] leading-relaxed"
-                    >
-                      <CheckCircle2
-                        size={16}
-                        className="text-[#00FF85] mt-0.5 shrink-0"
-                      />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </GlassCard>
-            </RevealOnScroll>
-
-            {/* Impacto real */}
-            <RevealOnScroll delay={3}>
-              <GlassCard className="h-full">
-                <div className="w-12 h-12 rounded-lg bg-[#00F5FF]/10 flex items-center justify-center mb-4">
-                  <BarChart3 className="text-[#00F5FF]" size={24} />
-                </div>
-                <h3 className="font-heading text-xl font-bold text-white mb-4">
-                  Impacto real
-                </h3>
-                <ul className="flex flex-col gap-3">
-                  {impactItems.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2 text-white/70 text-[13px] leading-relaxed"
-                    >
-                      <CheckCircle2
-                        size={16}
-                        className="text-[#00FF85] mt-0.5 shrink-0"
-                      />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </GlassCard>
-            </RevealOnScroll>
+      {/* Automation use cases */}
+      <section className="relative py-20 px-6" aria-labelledby="automation-title">
+        <div className="mx-auto max-w-7xl">
+          <RevealOnScroll>
+            <div className="mx-auto mb-12 max-w-3xl text-center">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#00F5FF]">
+                Automatización aplicada
+              </p>
+              <h2 id="automation-title" className="font-heading text-3xl md:text-4xl font-bold text-white text-balance">
+                Menos tareas manuales. Más oportunidades atendidas.
+              </h2>
+              <p className="mt-5 leading-relaxed text-white/65">
+                Hacemos que tus canales y herramientas trabajen como un solo sistema,
+                disponible para atender, registrar y notificar automáticamente.
+              </p>
+            </div>
+          </RevealOnScroll>
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {useCases.map(([title, description], index) => (
+              <RevealOnScroll key={title} delay={(index % 3) + 1}>
+                <GlassCard className="h-full">
+                  <MessagesSquare className="mb-4 text-[#00FF85]" size={24} />
+                  <h3 className="font-heading text-lg font-bold text-white">{title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-white/65">{description}</p>
+                </GlassCard>
+              </RevealOnScroll>
+            ))}
           </div>
         </div>
       </section>
@@ -207,43 +226,73 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Results / Metrics */}
+      {/* Process */}
       <section className="relative py-20 px-6">
         <div className="mx-auto max-w-7xl">
           <RevealOnScroll>
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-white text-center mb-12 text-balance">
-              Resultados que{" "}
-              <span className="gradient-text">hablan por sí solos</span>
+              De la idea a una{" "}
+              <span className="gradient-text">solución funcionando</span>
             </h2>
           </RevealOnScroll>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <RevealOnScroll delay={1}>
-              <GlassCard className="text-center">
-                <CountUp end={70} suffix="%" prefix="+" />
-                <p className="mt-2 text-white/80 text-sm">
-                  Eficiencia operativa
-                </p>
-              </GlassCard>
-            </RevealOnScroll>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              [Search, "01", "Diagnóstico", "Entendemos tus procesos, necesidades y puntos de mejora."],
+              [Workflow, "02", "Diseño", "Definimos el flujo, las integraciones y la experiencia."],
+              [Code2, "03", "Implementación", "Construimos, conectamos y probamos cada escenario."],
+              [Bot, "04", "Acompañamiento", "Monitoreamos, damos soporte y ajustamos la solución."],
+            ].map(([Icon, number, title, description], index) => {
+              const StepIcon = Icon as typeof Search
+              return (
+                <RevealOnScroll key={title as string} delay={(index % 3) + 1}>
+                  <GlassCard className="h-full">
+                    <div className="mb-5 flex items-center justify-between">
+                      <StepIcon className="text-[#00F5FF]" size={24} />
+                      <span className="font-heading text-2xl font-bold text-white/15">{number as string}</span>
+                    </div>
+                    <h3 className="font-heading text-lg font-bold text-white">{title as string}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/65">{description as string}</p>
+                  </GlassCard>
+                </RevealOnScroll>
+              )
+            })}
+          </div>
+        </div>
+      </section>
 
-            <RevealOnScroll delay={2}>
-              <GlassCard className="text-center">
-                <CountUp end={15} prefix="-" />
-                <p className="mt-2 text-white/80 text-sm">
-                  Horas/semana en tareas manuales
-                </p>
-              </GlassCard>
-            </RevealOnScroll>
-
-            <RevealOnScroll delay={3}>
-              <GlassCard className="text-center">
-                <CountUp end={3} suffix="s" />
-                <p className="mt-2 text-white/80 text-sm">
-                  Tiempo de respuesta automatizada
-                </p>
-              </GlassCard>
-            </RevealOnScroll>
+      {/* Frequently asked questions */}
+      <section className="relative py-20 px-6" aria-labelledby="faq-title">
+        <div className="mx-auto max-w-4xl">
+          <RevealOnScroll>
+            <div className="mb-10 text-center">
+              <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-[#00FF85]">
+                Preguntas frecuentes
+              </p>
+              <h2 id="faq-title" className="font-heading text-3xl md:text-4xl font-bold text-white">
+                Lo que necesitas saber
+              </h2>
+            </div>
+          </RevealOnScroll>
+          <div className="space-y-4">
+            {[
+              ["¿Qué procesos se pueden automatizar?", "Atención de preguntas, captura y clasificación de contactos, seguimientos, agendamientos, recordatorios, notificaciones, actualización de CRM y reportes, entre otros."],
+              ["¿Solo trabajan con WhatsApp?", "No. Conectamos WhatsApp, redes sociales, formularios web, correo, calendarios, CRM, Google Sheets, bases de datos y otras plataformas que permitan integración."],
+              ["¿Desarrollan soluciones desde cero?", "Sí. Creamos páginas web, software y automatizaciones a medida cuando las herramientas existentes no cubren las necesidades de la operación."],
+              ["¿Ofrecen soporte después de implementar?", "Sí. Ofrecemos acompañamiento para mantenimiento, monitoreo, ajustes y continuidad de las soluciones implementadas."],
+            ].map(([question, answer]) => (
+              <RevealOnScroll key={question}>
+                <details className="glass-card group rounded-xl p-5">
+                  <summary className="cursor-pointer list-none font-heading font-semibold text-white">
+                    <span className="flex items-center justify-between gap-4">
+                      {question}
+                      <span className="text-xl text-[#00F5FF] transition-transform group-open:rotate-45">+</span>
+                    </span>
+                  </summary>
+                  <p className="mt-4 max-w-3xl text-sm leading-relaxed text-white/65">{answer}</p>
+                </details>
+              </RevealOnScroll>
+            ))}
           </div>
         </div>
       </section>
@@ -254,19 +303,18 @@ export default function HomePage() {
           <RevealOnScroll>
             <GlassCard hover={false} className="py-12 px-8">
               <h2 className="font-heading text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
-                {"Listo para "}
-                <span className="gradient-text">transformar</span>
-                {" tu negocio?"} 
+                Descubre qué puede{" "}
+                <span className="gradient-text">mejorar tu empresa</span>
               </h2>
               <p className="mt-10 text-white/75 mb-8 max-w-lg mx-auto text-pretty">
-                Agenda una demo personalizada y descubre cómo automatizar,
-                desarrollar y proteger tu negocio digital.
+                Revisamos tu necesidad y te mostramos una ruta clara para convertirla
+                en una solución digital útil, segura y sostenible.
               </p>
               <Link
-                href="/contacto"
+                href="/contacto#formulario"
                 className="mt-2 glow-btn px-8 py-3.5 rounded-lg font-semibold text-white inline-flex items-center gap-2"
               >
-                Cotizar Servicio
+                Hablemos de tu proyecto
                 <ArrowRight size={18} />
               </Link>
             </GlassCard>

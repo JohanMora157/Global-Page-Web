@@ -69,6 +69,12 @@ export function ChatbotButton() {
     return () => clearTimeout(t)
   }, [open, messages])
 
+  useEffect(() => {
+    const openChat = () => setOpen(true)
+    window.addEventListener("global-automate:open-chat", openChat)
+    return () => window.removeEventListener("global-automate:open-chat", openChat)
+  }, [])
+
   return (
     <>
       {/* Botón flotante */}

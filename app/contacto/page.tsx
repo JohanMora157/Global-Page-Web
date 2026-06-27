@@ -2,6 +2,7 @@ import { RevealOnScroll } from "@/components/reveal-on-scroll"
 import { GlassCard } from "@/components/glass-card"
 import { ContactForm } from "@/components/contacto/contact-form"
 import { FaqAccordion } from "@/components/contacto/faq-accordion"
+import { AssistantInvitation } from "@/components/contacto/assistant-invitation"
 import {
   Phone,
   Mail,
@@ -10,7 +11,7 @@ import {
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contáctanos | Global Automate",
+  title: "Contáctanos",
   description:
     "Cuéntanos tu caso y te proponemos un plan claro: automatización, web, software o seguridad.",
 }
@@ -94,6 +95,8 @@ export default function ContactoPage() {
           </RevealOnScroll>
         </div>
       </section>
+
+      <AssistantInvitation />
 
       {/* Contact info + Form */}
       <section className="relative py-12 px-6">

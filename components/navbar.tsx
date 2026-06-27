@@ -10,7 +10,7 @@ const navLinks = [
   { href: "/", label: "Inicio" },
   { href: "/servicios", label: "Servicios" },
   { href: "/nosotros", label: "Sobre Nosotros" },
-  { href: "/contacto", label: "Contáctanos" },
+  { href: "/contacto#formulario", label: "Contáctanos" },
 ]
 
 export function Navbar() {
@@ -68,7 +68,7 @@ export function Navbar() {
         </ul>
 
         <Link
-          href="/contacto"
+          href="/contacto#formulario"
           className="hidden md:inline-flex glow-btn md:px-3 md:py-2 md:text-xs lg:px-5 lg:py-2.5 lg:text-sm rounded-lg font-semibold text-white"
         >
           Cotizar Servicio
@@ -108,7 +108,7 @@ export function Navbar() {
           ))}
           <li>
             <Link
-              href="/contacto"
+              href="/contacto#formulario"
               onClick={() => setIsOpen(false)}
               className="glow-btn inline-block px-5 py-2.5 rounded-lg text-sm font-semibold text-white text-center w-full"
             >
