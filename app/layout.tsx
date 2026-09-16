@@ -7,6 +7,7 @@ import { ParticlesBackground } from "@/components/particles-background"
 import { ChatbotButton } from "@/components/chatbot-button"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { PageTransition } from "@/components/page-transition"
+import { siteUrl } from "@/lib/site"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Global Automate | Automatización y Desarrollo de Software",
     template: "%s | Global Automate",
